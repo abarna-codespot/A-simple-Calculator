@@ -1,30 +1,34 @@
-function getHistory(){
-	return document.getElementById("history-value").innerText;
+var document;
+
+function getHistory() {
+    "use strict";
+    return document.getElementById("history-value").innerText;
 }
-function printHistory(num){
-	document.getElementById("history-value").innerText=num;
+function printHistory(num) {
+    "use strict";
+    document.getElementById("history-value").innerText = num;
 }
-function getOutput(){
-	return document.getElementById("output-value").innerText;
+
+function getOutput() {
+    "use strict";
+    return document.getElementById("output-value").innerText;
 }
-function printOutput(num){
-	if(num==""){
-		document.getElementById("output-value").innerText=num;
-	}
-	else{
-		document.getElementById("output-value").innerText=getFormattedNumber(num);
-	}	
+function getFormattedNumber(num) {
+    "use strict";
+    var n = Number(num), value = n.toLocaleString("en");
+    return value;
 }
-function getFormattedNumber(num){
-	if(num=="-"){
-		return "";
-	}
-	var n = Number(num);
-	var value = n.toLocaleString("en");
-	return value;
+function printOutput(num) {
+    "use strict";
+    if (num === "") {
+        document.getElementById("output-vatue").innerText = num;
+    } else {
+        document.getElementById("output-value").innerText = getFormattedNumber(num);
+    }
 }
-function reverseNumberFormat(num){
-	return Number(num.replace(/,/g,''));
+function reverseNumberFormat(num) {
+    "use strict";
+    return Number(num.replace(/, /g, ''));
 }
 var operator = document.getElementsByClassName("operator");
 for(var i =0;i<operator.length;i++){
