@@ -56,6 +56,26 @@ for(var i =0;i<operator.length;i++){
 					printOutput(result);
 					printHistory("");
 				}
+				else if(this.id=="log"){
+                                  var result=eval(Math.log10(history));
+                                  printOutput(result);
+                                   printHistory("");
+                                }
+                              else if(this.id=="sqrt"){
+                                 var result=eval(Math.sqrt(history));
+                                  printOutput(result);
+                                  printHistory("");
+                                }
+                             else if(this.id=="ln"){
+                                 var result=eval(Math.log2(history));
+                                 printOutput(result);
+                                 printHistory("");
+                                }
+                             else if(this.id=="pi"){
+                                var result=eval(Math.PI);
+                                 printOutput(result);
+                                 printHistory("");
+                                }
 				else{
 					history=history+this.id;
 					printHistory(history);

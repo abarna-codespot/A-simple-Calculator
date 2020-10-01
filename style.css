@@ -4,13 +4,13 @@ body{
 }
 #container{
 	width: 1000px;
-	height: 550px;
+	height: 615px;
 	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
 	margin: 20px auto;	
 }
 #calculator{
 	width: 320px;
-	height: 520px;
+	height: 586px;
 	background-color: #eaedef;
 	margin: 0 auto;
 	top: 20px;
@@ -79,4 +79,8 @@ button:nth-child(16){
 button:nth-child(20){
 	font-size: 20px;
 	background-color: #9477af;
+}
+button:nth-child(24){
+	font-size: 20px;
+	background-color: #0fe90f;
 }
