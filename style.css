@@ -47,6 +47,7 @@ body{
 	border-width: 0;
 	font-weight: bold;
 	font-size: 15px;
+	transition: 0.3s;
 }
 .number, .empty{
 	background-color: #eaedef;
@@ -59,6 +60,9 @@ body{
 }
 .operator:focus, .number:focus, .empty:focus{
 	outline: 0;
+}
+.number:hover{
+	background: rgba(150,150,150,0.3);
 }
 button:nth-child(4){
 	font-size: 20px;
