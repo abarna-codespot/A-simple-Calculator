@@ -48,6 +48,10 @@ body{
 	font-weight: bold;
 	font-size: 15px;
 }
+.number:hover, .operator:hover {
+    cursor: pointer;
+    background-color: gray;
+}
 .number, .empty{
 	background-color: #eaedef;
 }
