@@ -1,3 +1,5 @@
+/*java script functions added */
+
 function getHistory(){
 	return document.getElementById("history-value").innerText;
 }
