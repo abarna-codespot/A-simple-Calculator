@@ -1,25 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
-	font-family: 'Open Sans',sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background-color: black;
+	background:linear-gradient(135deg,#C02425,#F0CB35);
 }
 #container{
 	width: 1000px;
 	height: 550px;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
 	margin: 20px auto;	
 }
+button{
+border:1px solid black;}
 #calculator{
 	width: 320px;
 	height: 520px;
 	background-color: #eaedef;
 	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
 	top: 20px;
+	padding-left: 15px;
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #result{
 	height: 120px;
+	font-size: 2em;
 }
 #history{
 	text-align: right;
@@ -39,14 +45,15 @@ body{
 	height: 400px;
 }
 .operator, .number, .empty{
-	width: 50px;
-	height: 50px;
-	margin: 15px;
+	width: 60px;
+	height: 60px;
+	margin: 7.5px;
+	padding: 10px;
 	float: left;
 	border-radius: 50%;
-	border-width: 0;
-	font-weight: bold;
-	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 22px;
 }
 .number, .empty{
 	background-color: #eaedef;
