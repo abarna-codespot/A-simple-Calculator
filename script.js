@@ -1,12 +1,8 @@
-function getHistory(){
-	return document.getElementById("history-value").innerText;
-}
-function printHistory(num){
-	document.getElementById("history-value").innerText=num;
-}
-function getOutput(){
-	return document.getElementById("output-value").innerText;
-}
+let getHistory = () => document.getElementById("history-value").innerText;
+let printHistory = (num) => document.getElementById("history-value").innerText=num;
+let getOutput = () => document.getElementById("output-value").innerText;
+let printOutput = (num) => (num=="") ? document.getElementById("output-value").innerText=num : document.getElementById("output-value").innerText=getFormattedNumber(num);
+
 function printOutput(num){
 	if(num==""){
 		document.getElementById("output-value").innerText=num;
@@ -23,9 +19,8 @@ function getFormattedNumber(num){
 	var value = n.toLocaleString("en");
 	return value;
 }
-function reverseNumberFormat(num){
-	return Number(num.replace(/,/g,''));
-}
+let reverseNumberFormat = (num) => Number(num.replace(/,/g,''));
+
 var operator = document.getElementsByClassName("operator");
 for(var i =0;i<operator.length;i++){
 	operator[i].addEventListener('click',function(){
