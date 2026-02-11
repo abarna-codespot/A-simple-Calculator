@@ -11,7 +11,7 @@ body{
 #calculator{
 	width: 320px;
 	height: 520px;
-	background-color: #eaedef;
+	background-color:rgb(139, 245, 245);
 	margin: 0 auto;
 	top: 20px;
 	position: relative;
@@ -27,7 +27,7 @@ body{
 	margin: 0 20px;
 	padding-top: 20px;
 	font-size: 15px;
-	color: #919191;
+	color: #604444;
 }
 #output{
 	text-align: right;
@@ -66,15 +66,15 @@ button:nth-child(4){
 }
 button:nth-child(8){
 	font-size: 20px;
-	background-color: #ffa500;
+	background-color: #418496;
 }
 button:nth-child(12){
 	font-size: 20px;
-	background-color: #f08080;
+	background-color: #c1b83b;
 }
 button:nth-child(16){
 	font-size: 20px;
-	background-color: #7d93e0;
+	background-color: #8f3282;
 }
 button:nth-child(20){
 	font-size: 20px;
